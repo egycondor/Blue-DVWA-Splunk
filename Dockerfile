@@ -26,6 +26,8 @@ RUN apt-get update && apt-get install -y wget curl && \
 
 # Configure Splunk
 COPY splunk-configs/inputs.conf /opt/splunkforwarder/etc/system/local/
+COPY splunk-configs/props.conf /opt/splunkforwarder/etc/system/local/
+COPY splunk-configs/transforms.conf /opt/splunkforwarder/etc/system/local/
 
 
 
